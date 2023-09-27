@@ -1,5 +1,6 @@
-﻿  d3dApp.cpp
-  DirectXApp.cpp
+﻿  DirectXApp.cpp
+  MAIN.cpp
+F:\TA\DX12\MyExercrise\Execrise\MAIN.cpp(69,27): warning C4305: “初始化”: 从“double”到“float”截断
   正在生成代码...
-  LINK : 没有找到 F:\TA\DX12\MyExercrise\Day2\x64\Debug\Day2.exe 或上一个增量链接没有生成它；正在执行完全链接
-  Day2.vcxproj -> F:\TA\DX12\MyExercrise\Day2\x64\Debug\Day2.exe
+  LINK : 没有找到 F:\TA\DX12\MyExercrise\Execrise\x64\Debug\Day2.exe 或上一个增量链接没有生成它；正在执行完全链接
+  Day2.vcxproj -> F:\TA\DX12\MyExercrise\Execrise\x64\Debug\Day2.exe
