@@ -14,10 +14,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pCmdLine, int nCm
 }
 void Start()
 {
-	//创建命令队列和命令列表
-	ComPtr<ID3D12CommandQueue> mCommandQueue;
-	ComPtr<ID3D12CommandAllocator> mDirectCmdListAlloc;
-	ComPtr<ID3D12GraphicsCommandList> mCommandList;
+
 
 	//创建交换链   双重缓冲Double buffer 和 描述符
 

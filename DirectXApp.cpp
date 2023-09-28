@@ -174,6 +174,49 @@ int DirectXApp::Run()
 	return (int)msg.wParam;
 }
 
+void DirectXApp::CreateCommandObjects()
+{
+	D3D12_COMMAND_QUEUE_DESC queue = {};
+	queue.Type = D3D12_COMMAND_LIST_TYPE_DIRECT;
+	queue.Flags = D3D12_COMMAND_QUEUE_FLAG_NONE;
+	ThrowIfFailed(device->CreateCommandQueue(&queue,IID_PPV_ARGS(&mCommandQueue)));
+	ThrowIfFailed(device->CreateCommandAllocator(
+		D3D12_COMMAND_LIST_TYPE_DIRECT,IID_PPV_ARGS(mDirectCmdListAlloc.GetAddressOf())));
+	ThrowIfFailed(device->CreateCommandList(
+		0, 
+		D3D12_COMMAND_LIST_TYPE_DIRECT,
+		mDirectCmdListAlloc.Get(),
+		nullptr,
+		IID_PPV_ARGS(mCommandList.GetAddressOf())));
+	mCommandList->Close();
+}
+
+void DirectXApp::CreateSwapChain()
+{
+	mBackBufferFormat = DXGI_FORMAT_R8G8B8A8_UNORM;
+	mSwapChain.Reset();
+	DXGI_SWAP_CHAIN_DESC sd;
+	sd.BufferDesc.Width = mClientWidth;
+	sd.BufferDesc.Height = mClientHeight;
+	sd.BufferDesc.RefreshRate.Numerator = 60;
+	sd.BufferDesc.RefreshRate.Denominator = 1;
+	sd.BufferDesc.Format = mBackBufferFormat;
+	sd.BufferDesc.ScanlineOrdering = DXGI_MODE_SCANLINE_ORDER_UNSPECIFIED;
+	sd.BufferDesc.Scaling = DXGI_MODE_SCALING_UNSPECIFIED;
+	sd.SampleDesc.Count = m4xMsaaState ? 4 : 1;
+	sd.SampleDesc.Quality = m4xMsaaState ? (m4xMsaaQuality - 1) : 0;
+	sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
+	sd.BufferCount = SwapChainBufferCount;
+	sd.OutputWindow = ghMainWnd;
+	sd.Windowed = true;
+	sd.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
+	sd.Flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
+	ThrowIfFailed(factory->CreateSwapChain(
+		mCommandQueue.Get(),
+		&sd,
+		mSwapChain.GetAddressOf()));
+}
+
 void DirectXApp::CloseWindows()
 {
 	int index = MessageBox(0, L"是否退出程序", L"退出窗口", MB_YESNO);

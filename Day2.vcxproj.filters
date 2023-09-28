@@ -24,61 +24,61 @@
     <ClCompile Include="MAIN.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\Camera.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\d3dApp.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\d3dUtil.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\DDSTextureLoader.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\GameTimer.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\GeometryGenerator.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\MathHelper.cpp">
-      <Filter>源文件\Common</Filter>
-    </ClCompile>
     <ClCompile Include="DirectXApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\Camera.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\d3dApp.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\d3dUtil.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\DDSTextureLoader.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\GameTimer.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\GeometryGenerator.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CodeRes\Code\Common\MathHelper.cpp">
+      <Filter>源文件\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\Camera.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dApp.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dUtil.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dx12.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\DDSTextureLoader.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\GameTimer.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\GeometryGenerator.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\MathHelper.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\UploadBuffer.h">
-      <Filter>头文件\Common</Filter>
-    </ClInclude>
     <ClInclude Include="DirectXApp.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\UploadBuffer.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\MathHelper.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\GeometryGenerator.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\GameTimer.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\DDSTextureLoader.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\d3dx12.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\d3dUtil.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\d3dApp.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CodeRes\Code\Common\Camera.h">
+      <Filter>头文件\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

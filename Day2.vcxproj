@@ -77,7 +77,7 @@
     <IncludePath>F:\TA\DX12\d3d12book-master\d3d12book-master\Common;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>F:\TA\DX12\d3d12book-master\d3d12book-master\Common;$(IncludePath)</IncludePath>
+    <IncludePath>D:\CPP\DirectX\CodeRes\Code\Common;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>F:\TA\DX12\d3d12book-master\d3d12book-master\Common;$(IncludePath)</IncludePath>
@@ -139,26 +139,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\Camera.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\d3dApp.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\d3dUtil.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\DDSTextureLoader.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\GameTimer.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\GeometryGenerator.cpp" />
-    <ClCompile Include="..\..\d3d12book-master\d3d12book-master\Common\MathHelper.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\Camera.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\d3dApp.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\d3dUtil.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\DDSTextureLoader.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\GameTimer.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\GeometryGenerator.cpp" />
+    <ClCompile Include="..\CodeRes\Code\Common\MathHelper.cpp" />
     <ClCompile Include="DirectXApp.cpp" />
     <ClCompile Include="MAIN.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\Camera.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dApp.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dUtil.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\d3dx12.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\DDSTextureLoader.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\GameTimer.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\GeometryGenerator.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\MathHelper.h" />
-    <ClInclude Include="..\..\d3d12book-master\d3d12book-master\Common\UploadBuffer.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\Camera.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\d3dApp.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\d3dUtil.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\d3dx12.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\DDSTextureLoader.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\GameTimer.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\GeometryGenerator.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\MathHelper.h" />
+    <ClInclude Include="..\CodeRes\Code\Common\UploadBuffer.h" />
     <ClInclude Include="DirectXApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

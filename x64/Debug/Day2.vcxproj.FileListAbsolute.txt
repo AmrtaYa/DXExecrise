@@ -1,2 +1,3 @@
 F:\TA\DX12\MyExercrise\Day2\x64\Debug\Day2.exe
 F:\TA\DX12\MyExercrise\Execrise\x64\Debug\Day2.exe
+D:\CPP\DirectX\DX\x64\Debug\Day2.exe
